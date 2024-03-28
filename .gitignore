@@ -3,3 +3,4 @@ server/dist/
 server/src/generated/
 *.env*
 *.db
+*/package-lock.json
