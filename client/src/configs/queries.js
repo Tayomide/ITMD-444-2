@@ -2,12 +2,13 @@ import { gql } from '@apollo/client'
 
 // Fetch all posts with titles and authors
 const GetPosts = gql`
-  query GetPosts {
+query GetPosts {
     feed {
       id
       title
       viewCount
       updatedAt
+      createdAt
       author {
         id
         name

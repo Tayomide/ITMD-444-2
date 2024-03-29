@@ -3,7 +3,8 @@ import { useMutation } from '@apollo/client';
 import { UpdateViewCount } from '../configs/mutations';
 import styled from 'styled-components';
 
-const PostBlock = ({ id, title, viewCount, updatedAt, author }) => {
+const PostBlock = ({ id, title, viewCount, createdAt, author }) => {
+  console.log(createdAt)
   const formatDate = (date) => {
     const dateObj = new Date(date);
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -28,7 +29,7 @@ const PostBlock = ({ id, title, viewCount, updatedAt, author }) => {
             &#9207;
           </button>
         </p>
-        <p>{formatDate(updatedAt)}</p>
+        <p>{formatDate(createdAt)}</p>
       </div>
     </Container>
   )
