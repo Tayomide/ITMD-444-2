@@ -85,11 +85,7 @@ const Query = objectType({
               email: args.userUniqueInput.email || undefined,
             },
           })
-          .posts({
-            where: {
-              published: false,
-            },
-          })
+          .posts()
       },
     })
   },
