@@ -60,6 +60,7 @@ const Container = styled.li`
     display: flex;
     flex-direction: row;
     justify-content: end;
+    align-items: center;
     margin: 5px 0;
     gap: 1em;
     button{
@@ -80,6 +81,9 @@ const Container = styled.li`
       &.up{
         transform: rotate(180deg) translateY(-0.25em);
       }
+    }
+    p{
+      height: max-content;
     }
   }
 `
