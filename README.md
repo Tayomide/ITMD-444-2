@@ -19,4 +19,4 @@ https://itmd-444-2.onrender.com
 ![Creation of user](/assets/user-create.png)
 
 # Mutation for deleting post
-![Delete post](delete-post.png)
+![Delete post](/assets/delete-post.png)
