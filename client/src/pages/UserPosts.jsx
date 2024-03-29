@@ -30,7 +30,7 @@ const UserPosts = () => {
           <li key={id}>
             <a href={`/post/${id}`}>{title}</a>
             <div className='meta'>
-              <p>{viewCount} views</p>
+              <p>{viewCount} upvotes</p>
               <p>{formatDate(updatedAt)}</p>
             </div>
           </li>
